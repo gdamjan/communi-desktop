@@ -1,10 +1,10 @@
-a { color: #4d8fff; }
+a { color: #9fc3ff ; }
 .timestamp { color: #808080; font-size: small }
 .date { color: #808080; font-size: small }
 
-.message { white-space: pre-wrap; }
+.message { white-space: pre-wrap; font-size: 14px; }
 .notice { color: #b23e3e; }
-.action { color: #b232b2; }
+.action { color: #ac964d; }
 .event { color: #808080; }
 
 .bold { font-weight: bold; }
@@ -29,16 +29,16 @@ a { color: #4d8fff; }
 .lightblue { color: #268bd2;}
 .pink { color: #6c71c4;}
 
-.nick0 { color: hsl(0, 0%, 60%); }
-.nick1 { color: hsl(0, 50%, 60%); }
-.nick2 { color: hsl(40, 50%, 60%); }
-.nick3 { color: hsl(80, 50%, 60%); }
-.nick4 { color: hsl(120, 50%, 60%); }
-.nick5 { color: hsl(160, 50%, 60%); }
-.nick6 { color: hsl(200, 50%, 60%); }
-.nick7 { color: hsl(240, 50%, 60%); }
-.nick8 { color: hsl(280, 50%, 60%); }
-.nick9 { color: hsl(320, 50%, 60%); }
+.nick0 { color: #ffffff; /* 07 */ }
+.nick1 { color: #b4b7b4; /* 04 */ }
+.nick2 { color: #cc6666; /* 08 */ }
+.nick3 { color: #de935f; /* 09 */ }
+.nick4 { color: #f0c674; /* 0A */ }
+.nick5 { color: #b5bd68; /* 0B */ }
+.nick6 { color: #8abeb7; /* 0C */ }
+.nick7 { color: #81a2be; /* 0D */ }
+.nick8 { color: #b294bb; /* 0E */ }
+.nick9 { color: #a3685a; /* 0F */ }
 
 TextBrowser, TextInput {
     border: none;
@@ -55,6 +55,8 @@ SplitView {
 TextInput {
     background: #363939;
     border-top: 1px solid #24282a;
+    padding: 6px 4px;
+    font-size: 14px;
 }
 
 TreeWidget, ListView {
@@ -64,7 +66,7 @@ TreeWidget, ListView {
 }
 
 TreeWidget::item {
-    color: #eeeeec;
+    color: #D6D6D4;
     height: 20px;
 }
 
