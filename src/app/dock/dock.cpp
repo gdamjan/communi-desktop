@@ -227,6 +227,7 @@ void Dock::onTrayActivated(QSystemTrayIcon::ActivationReason reason)
                 d.window->show();
                 d.window->raise();
                 d.window->activateWindow();
+                d.window->setFocus();
             }
             break;
         default:
