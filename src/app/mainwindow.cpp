@@ -104,7 +104,7 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent)
     shortcut = new QShortcut(QKeySequence::Preferences, this);
     connect(shortcut, SIGNAL(activated()), this, SLOT(showSettings()));
 
-    shortcut = new QShortcut(QKeySequence::Close, d.chatPage);
+    shortcut = new QShortcut(QKeySequence("Ctrl+Shift+W"), d.chatPage);
     connect(shortcut, SIGNAL(activated()), d.chatPage, SLOT(closeBuffer()));
 
     d.dock = new Dock(this);

@@ -469,7 +469,8 @@ void SplitView::addViewActions(QMenu* menu, BufferView* view)
     QAction* queryAction = menu->addAction(tr("Open query"), this, SLOT(openQuery()));
     queryAction->setData(QVariant::fromValue(view));
 
-    QAction* closeAction = menu->addAction(tr("Close"), this, SLOT(closeView()), QKeySequence::Close);
+    QAction* closeAction = menu->addAction(tr("Close"), this, SLOT(closeView()));
+    closeAction->setShortcut(QKeySequence("Ctrl+Shift+W"));
     closeAction->setData(QVariant::fromValue(view));
     closeAction->setShortcutContext(Qt::WidgetShortcut);
 }

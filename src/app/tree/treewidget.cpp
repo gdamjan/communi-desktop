@@ -771,7 +771,8 @@ QMenu* TreeWidget::createContextMenu(TreeItem* item)
         action->setData(QVariant::fromValue(item));
     }
 
-    QAction* closeAction = menu->addAction(tr("Close"), this, SLOT(onCloseTriggered()), QKeySequence::Close);
+    QAction* closeAction = menu->addAction(tr("Close"), this, SLOT(onCloseTriggered()));
+    closeAction->setShortcut(QKeySequence("Ctrl+Shift+W"));
     closeAction->setShortcutContext(Qt::WidgetShortcut);
     closeAction->setData(QVariant::fromValue(item));
 
